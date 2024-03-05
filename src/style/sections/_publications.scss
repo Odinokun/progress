@@ -1,12 +1,24 @@
+.publications {
+  margin-bottom: 80px;
+}
+
 .publications__header {
   display: flex;
   flex-direction: column;
-  padding: 24px 0;
+  margin-bottom: 24px;
 
   @include min(768) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .publications__link {
+    display: none;
+
+    @include min(768) {
+      display: flex;
+    }
   }
 }
 
@@ -21,12 +33,12 @@
 .publications__link {
   display: flex;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 0;
   white-space: nowrap;
   text-decoration: none;
 
   @include min(768) {
-    margin-bottom: 0;
+    margin-bottom: 6px;
     padding-left: 32px;
   }
 
@@ -86,14 +98,22 @@
     max-width: 160px;
   }
 }
+
 .publications__item-title {
   display: block;
   margin-bottom: 12px;
   text-align: center;
   color: $black;
 }
+
 .publications__text {
   display: block;
   text-align: center;
   color: $grey;
+}
+
+.publications__footer {
+  @include min(768) {
+    display: none;
+  }
 }
