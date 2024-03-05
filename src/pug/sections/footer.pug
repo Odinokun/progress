@@ -1,4 +1,56 @@
-//begin footer
-footer.footer(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 footer
-//end footer
+// begin footer
+footer.footer
+  // begin footer__top
+  .footer__top
+    .container
+      a(href="/").footer__logo
+        img(src="assets/img/footer-logo.svg", alt="Logo")
+  // end footer__top
+
+  // begin footer__middle
+  .footer__middle
+    .container
+      // begin footer__nav
+      nav.footer__nav
+        h4.h5.footer__nav-title Menu
+        ul.footer__nav-list
+          li.footer__nav-item
+            a(href="/").footer__nav-link Über uns
+          li.footer__nav-item
+            a(href="/").footer__nav-link Veranstaltungen
+          li.footer__nav-item
+            a(href="/").footer__nav-link Pubklikationen
+          li.footer__nav-item
+            a(href="/").footer__nav-link Fundgrube
+          li.footer__nav-item
+            a(href="/").footer__nav-link Gönner werden
+      // end footer__nav
+
+      // begin footer__contact
+      .footer__contact
+        h4.h5.footer__contact-title Sitz
+        a(href="https://www.google.com/maps"
+          target="_blank"
+          ref="noopener noreferrer").footer__contact-link Progress Foundation<br>c/o Treuco AG<br>Claridenstrasse 25<br>CH-8002 Zürich
+        a(href="mailto:progress@treuco.ch").footer__contact-link progress@treuco.ch
+      // end footer__contact
+
+      // begin footer__info
+      .footer__info
+        h4.h5.footer__info-title Gönner/-in werden
+        p.body-1.footer__info-text Die Progress Foundation setzt sich seit über 40 Jahren mit den Kernfragen einer offenen Gesellschaft auseinander und engagiert sich für liberale Werte. Sie fördert den Wettbewerb, das Privateigentum, einen effizienten Staat und Eigenverantwortung der Bürger.
+        a(href="/").btn.btn--white.btn--arr-right
+          span Ihre Unterstützung zählt
+          +svg('arr-right')
+  // end footer__middle
+
+  // begin footer__bottom
+  .footer__bottom
+    .container
+      span.footer__copy © Progress Foundation 2024
+      .footer__links
+        a(href="/").footer__link Impressum
+        a(href="/").footer__link
+          i Datenschutzerklärung
+  // end footer__bottom
+// end footer

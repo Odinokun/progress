@@ -1,0 +1,178 @@
+.footer {
+  padding: 24px 0 40px 0;
+  background-color: $green;
+}
+
+// begin top
+.footer__top {
+  margin-bottom: 24px;
+}
+
+.footer__logo {
+  img {
+    display: block;
+    width: 100%;
+    max-width: 258px;
+  }
+}
+// end top
+
+// begin middle
+.footer__middle {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btn {
+    margin-top: 40px;
+  }
+}
+
+.footer__nav {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @include min(768) {
+    width: 50%;
+    padding-right: 16px;
+  }
+  @include min(1024) {
+    width: 25%;
+  }
+}
+
+.footer__nav-title {
+  margin-bottom: 24px;
+  color: $white;
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__nav-link {
+  display: block;
+  margin-bottom: 12px;
+  transition: text-decoration-color 0.3s ease;
+  text-decoration-color: transparent;
+  color: $white;
+  &:hover {
+    text-decoration-color: $white;
+  }
+}
+
+.footer__contact {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @include min(768) {
+    width: 50%;
+  }
+  @include min(1024) {
+    width: 25%;
+    padding-right: 16px;
+  }
+}
+
+.footer__contact-title {
+  margin-bottom: 24px;
+  color: $white;
+}
+
+.footer__contact-link {
+  display: block;
+  margin-bottom: 12px;
+  transition: text-decoration-color 0.3s ease;
+  text-decoration-color: transparent;
+  color: $white;
+  &:hover {
+    text-decoration-color: $white;
+  }
+}
+
+.footer__info {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @include min(1024) {
+    width: 50%;
+  }
+}
+
+.footer__info-title {
+  margin-bottom: 24px;
+  color: $white;
+}
+
+.footer__info-text {
+  color: $white;
+}
+// end middle
+
+// begin bottom
+.footer__bottom {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__copy {
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 12px;
+  color: $white;
+
+  @include min(768) {
+    width: 50%;
+    padding-right: 16px;
+  }
+  @include min(1024) {
+    width: 25%;
+  }
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include min(768) {
+    width: 50%;
+  }
+  @include min(1024) {
+    width: 75%;
+  }
+}
+
+.footer__link {
+  line-height: 1;
+  position: relative;
+  display: block;
+  margin-right: 21px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: $white;
+  &:last-child {
+    margin-right: 0;
+    &::before {
+      display: none;
+    }
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 1px;
+    height: 18px;
+    content: '';
+    background-color: $white;
+  }
+}
+// end bottom
