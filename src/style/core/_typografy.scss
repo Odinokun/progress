@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.h1 {
+  font-family: $font-merri;
+}
+
+.h2 {
+  font-family: $font-barlow;
+  line-height: 1;
+}
+
+.h3 {
+  font-family: $font-barlow;
+}
+
+.h4 {
+  font-family: $font-barlow;
+}
+
+.h5 {
+  font-family: $font-barlow;
+}
+
+.h6 {
+  font-family: $font-barlow;
+}
+
+.h7 {
+  font-family: $font-barlow;
+}
