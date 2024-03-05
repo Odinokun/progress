@@ -1,17 +1,9 @@
-// ===== main colors =====
 $brand: #077964;
-$highlight: #d83612;
-$highlight-hov: darken($highlight, 5%);
 
-// ===== text colors =====
-$text: #181a19;
-
-// ===== link colors =====
-$link: lighten($brand, 10%);
-$link-hov: lighten($link, 25%);
-
-// ===== transition =====
-$transition-hover: 0.3s ease-in-out;
+// ===== main colors =====
+$green: #077964;
+$grey: #737b79;
+$black: #000;
 
 // ===== fonts =====
 $font: 'Inter', sans-serif;

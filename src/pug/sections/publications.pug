@@ -1,0 +1,38 @@
+mixin publications(image, title, text)
+  a(href="/").publications__item
+    .publications__image
+      img(src=image, alt=title)
+    .publications__content
+      h3.h6.publications__item-title= title
+      p.h7.publications__text= text
+
+// begin publications
+section.publications
+  .container
+    // begin publications__header
+    .publications__header
+      h2.h1.publications__title Aktuelle Publikationen
+      a(href="/").h5.publications__link
+        span Alle Publikationen
+        +svg('arr-right')
+    // end publications__header
+
+    // begin publications__list
+    .publications__list
+      +publications(
+        'assets/img/books/book-01.jpg',
+        'Links, zeitgeistig und machtverliebt',
+        'Liberale Gedanken zu den Intellektuellen')
+      +publications(
+        'assets/img/books/book-02.jpg',
+        'Total Data – Total Control',
+        'Null-Toleranz in allen Lebensbereichen')
+      +publications(
+        'assets/img/books/book-03.jpg',
+        'Reden und reden lassen',
+        'Anstand und Respekt statt politische Korrektheit')
+      +publications(
+        'assets/img/books/book-04.jpg',
+        'Vom Kredit zur Schuld',
+        'Wenn Verschuldung die Freiheit bedroht')
+// end publications
