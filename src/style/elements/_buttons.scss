@@ -1,0 +1,50 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 25px 0 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 25px;
+  span {
+    font-size: 16px;
+    line-height: 1;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  svg {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    margin-left: 9px;
+    transition: all 0.3s ease;
+  }
+}
+
+.btn--white {
+  color: $black;
+  border: 1px solid $white;
+  background-color: $white;
+  &:hover {
+    border-color: $black;
+    background-color: $black;
+    span {
+      color: $white;
+    }
+    svg {
+      fill: $white;
+    }
+  }
+  svg {
+    fill: $black;
+  }
+}
+
+.btn--arr-right {
+  &:hover {
+    svg {
+      transform: translateX(8px);
+    }
+  }
+}
