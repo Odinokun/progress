@@ -1,0 +1,73 @@
+extends ../_template
+
+block variables
+  - let title       = 'Progress foundation'
+  - let description = 'Progress foundation'
+
+block content
+  .main-wrap
+    include ../sections/header
+
+    //begin content
+    main.main
+      // begin article
+      article.article
+        .container
+          // begin article__header
+          header.article__header.article-header
+            .article-header__item
+              .article-header__item-icon
+                img(src="assets/img/icons/media.svg", alt="icon")
+              span.article-header__item-text In the media
+            .article-header__item
+              .article-header__item-icon
+                img(src="assets/img/icons/calendar.svg", alt="icon")
+              span.article-header__item-text 06.02.2024
+          // end article__header
+
+          // begin article__content
+          .article__content
+            h1.h1 Geschichtsschreibung sollte sich mehr mit Unternehmern befassen und weniger mit Politikern
+            h3.h5.text-grey Unser Geschichtsbild ist mit Blick auf die Wirtschaft oft verzerrt. Zum einen wird von der industriellen Revolution vielfach nur das soziale Elend wahrgenommen. Zum anderen wird die Bedeutung der Wirtschaft und vor allem der Unternehmer massiv unterschätzt.
+            h6.h6 Gerhard Schwarz
+            span.body-1.text-grey Nzz.ch
+          // end article__content
+
+          // begin article__content
+          .article__content
+            p Unlängst kam in einer angeregten Runde das Gespräch auf die verbreitete Geschichtsvergessenheit. Dass das, was vor uns war, nicht einfach Schnee von gestern ist, sondern Gegenwart und Zukunft prägt, scheint aus dem Bewusstsein zu verschwinden. Doch nicht nur die Geschichte ist prägend, sondern auch das, was in Deutschland, Österreich und der Schweiz über die Geschichte gelehrt wird – sofern es überhaupt noch gelehrt wird. Grosso modo gibt es zwei Prägungen von grosser Wirkmächtigkeit, denen man viel begegnet.
+          // end article__content
+
+          // begin article__content
+          .article__content
+            h2.h4 Der Schuldige ist schnell gefunden
+            p Da ist zum einen die in der Regel negative Darstellung der industriellen Revolution als eines einzigen sozialen Desasters. Und «schuld» an den zum Teil grauenhaften sozialen Missständen ist natürlich der böse Kapitalismus, wie das Friedrich Engels in seinem Werk «Die Lage der arbeitenden Klasse in England» einst beschrieben hat. Genau so haben es – zugegebenermassen ist dies nur anekdotische Evidenz – die meisten Menschen im Kopf.
+            p Dass es Frauen- und Kinderarbeit schon in vorindustrieller Zeit gab, wenn auch nicht in diesem Ausmass und kaum ausserhalb des Familienverbandes, wird meist ebenso ausgeblendet wie die Tatsache, dass es nur dank der industriellen Revolution und den Produktivitätsfortschritten gelang, die wegen der sinkenden Sterberate explodierende Bevölkerung in Lohn und Brot zu bringen.
+            p Von der ausserordentlichen Entwicklung von Wissenschaft und Technik ganz zu schweigen. Wenn die industrielle Revolution zu negativ dargestellt wird, und das ist oft der Fall, wird diskret ein antikapitalistischer Samen gesät.
+            p Zum anderen ist ausgerechnet die negativ konnotierte industrielle Umwälzung im 18. Jahrhundert in England (und später auf dem Kontinent) eines der wenigen wirtschaftlichen Themen, mit denen Schülerinnen und Schüler im Fach Geschichte konfrontiert werden.
+            p Oft bedeutet Geschichte zu ausschliesslich politische Geschichte. Es geht um Kaiser und Könige, Herrscher und Revolutionäre, Politiker und Wahlen, Kriege und Eroberungen. Wirtschaft spielt keine oder kaum eine Rolle, und wenn, dann selten in positivem Sinne.
+            p Dabei ist unser tägliches Leben zumal in Friedenszeiten mehr durch die Geschichte der Wirtschaft geprägt als durch die der Politik. Wie wir heute wohnen, essen, uns kleiden, uns fortbewegen, uns gegen Krankheiten schützen oder sie bekämpfen, verdanken wir hauptsächlich visionären Unternehmern, die einst Risiken auf sich nahmen, an Ideen glaubten, sie gegen Widerstände hartnäckig durchsetzten, Firmen gründeten und Erfolg hatten (während viele andere scheiterten).
+          // end article__content
+
+          // begin article__content
+          .article__content
+            .article__img-block
+              .article__img
+                img(src="assets/img/bosx.jpg", alt="picture")
+              .article__img-text.body-2
+                span Erfindungen wie der erste Einsatz einer Dampfmaschine im Kohlebergbau haben auch zur Erleichterung der Arbeit beigetragen (Gemälde von 1792). Akg-Images
+          // end article__content
+
+          // begin article__content
+          .article__content
+            h3.h4 Nährboden für Wirtschaftsfeindlichkeit
+            p Indem man das im Geschichtsunterricht zu wenig abbildet, schafft man subtil einen Nährboden für Wirtschaftsfeindlichkeit, jedenfalls für einen Mangel an Respekt für die Erfolge der Wirtschaft. Stellte man für die letzten drei Jahrhunderte die Leistungen der Unternehmer jenen der Politiker gegenüber, würde deutlich, warum Liberale im Gegensatz zu Leuten mit planwirtschaftlichen oder wohlfahrtsstaatlichen Überzeugungen so wenig vom Primat der Politik halten.
+            p Fehler gab und gibt es hier wie dort, für die grossen Katastrophen zeichnen aber doch Politiker verantwortlich, nicht Unternehmer.
+          // end article__content
+      // end article
+
+      include ../sections/publications
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
