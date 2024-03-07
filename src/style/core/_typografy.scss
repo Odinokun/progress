@@ -6,7 +6,11 @@ h5,
 h6,
 p {
   font-weight: 400;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
+}
+
+.text-grey {
+  color: $grey;
 }
 
 h1,
@@ -14,7 +18,9 @@ h1,
   font-family: $font-merri;
   line-height: 1.1;
 
-  @include responsive-font(56, 40);
+  overflow-wrap: break-word;
+  // @include responsive-font(56, 48);
+  @include responsive-font(56, 28);
 }
 
 h2,
@@ -22,7 +28,9 @@ h2,
   font-family: $font-merri;
   line-height: 1.2;
 
-  @include responsive-font(48, 40);
+  overflow-wrap: break-word;
+  // @include responsive-font(48, 40);
+  @include responsive-font(48, 22);
 }
 
 h3,
@@ -30,6 +38,8 @@ h3,
   font-family: $font-barlow;
   line-height: 1;
 
+  overflow-wrap: break-word;
+  // @include responsive-font(56, 40);
   @include responsive-font(56, 40);
 }
 
@@ -38,20 +48,30 @@ h4,
   font-family: $font-barlow;
   font-size: 48px;
   line-height: 1;
+
+  overflow-wrap: break-word;
+  // font-size: 48px;
+  @include responsive-font(48, 30);
 }
 
 h5,
 .h5 {
   font-family: $font-barlow;
-  font-size: 32px;
   line-height: 1.1;
+
+  overflow-wrap: break-word;
+  // font-size: 32px;
+  @include responsive-font(32, 24);
 }
 
 h6,
 .h6 {
   font-family: $font-barlow;
-  font-size: 24px;
   line-height: 1.05;
+
+  overflow-wrap: break-word;
+  // font-size: 24px;
+  @include responsive-font(24, 20);
 }
 
 .h6--caps {
@@ -60,8 +80,11 @@ h6,
 
 .h7 {
   font-family: $font-barlow;
-  font-size: 19px;
   line-height: 1.05;
+
+  overflow-wrap: break-word;
+  // font-size: 19px;
+  @include responsive-font(19, 17);
 }
 
 .body-1 {
