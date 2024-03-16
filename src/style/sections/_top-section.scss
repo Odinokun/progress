@@ -1,0 +1,22 @@
+.top-section {
+  padding-top: 40px;
+  background-color: $green;
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+
+    @include min(768) {
+      min-height: 190px;
+    }
+  }
+}
+
+.top-section__title {
+  // width: 60%;
+  margin-top: auto;
+  margin-bottom: -8px;
+  // margin-left: auto;
+  text-align: right;
+  color: $white;
+}

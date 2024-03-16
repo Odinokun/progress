@@ -1,0 +1,99 @@
+mixin alphabet__filter-item(letter)
+  .alphabet__filter-item
+    input(type="radio" name='alphabet-filter')
+    .alphabet__filter-item-btn
+      span.h6= letter
+
+mixin alphabet__item(letter, name1, name2, name3)
+  .alphabet__item
+    .h1.alphabet__item-letter= letter
+    .alphabet__item-list
+      a(href="/").h6.alphabet__item-list-item
+        span= name1
+      a(href="/").h6.alphabet__item-list-item
+        span= name2
+      a(href="/").h6.alphabet__item-list-item
+        span= name3
+
+mixin alphabet__item-lg(letter, name1, name2, name3, name4, name5, name6)
+  .alphabet__item
+    .h1.alphabet__item-letter= letter
+    .alphabet__item-list
+      a(href="/").h6.alphabet__item-list-item
+        span= name1
+      a(href="/").h6.alphabet__item-list-item
+        span= name2
+      a(href="/").h6.alphabet__item-list-item
+        span= name3
+      a(href="/").h6.alphabet__item-list-item
+        span= name4
+      a(href="/").h6.alphabet__item-list-item
+        span= name5
+      a(href="/").h6.alphabet__item-list-item
+        span= name6
+
+// begin alphabet
+.alphabet
+  .container
+    // begin top
+    .alphabet__top
+      h2.h1 Herausgeber und Autoren
+      .body-1 Hinweis: Die Angaben zu einer Person beziehen sich auf den Zeitpunkt ihres letzten Beitrags für die Progress Foundation.
+    // end top
+
+    // begin alphabet__filter
+    form.alphabet__filter
+      .alphabet__filter-item
+        input(type="radio" name='alphabet-filter' checked)
+        .alphabet__filter-item-btn
+          span.h6 Alle
+      +alphabet__filter-item('A')
+      +alphabet__filter-item('B')
+      +alphabet__filter-item('C')
+      +alphabet__filter-item('D')
+      +alphabet__filter-item('E')
+      +alphabet__filter-item('F')
+      +alphabet__filter-item('G')
+      +alphabet__filter-item('H')
+      +alphabet__filter-item('I')
+      +alphabet__filter-item('J')
+      +alphabet__filter-item('K')
+      +alphabet__filter-item('L')
+      +alphabet__filter-item('M')
+      +alphabet__filter-item('N')
+      +alphabet__filter-item('O')
+      +alphabet__filter-item('P')
+      +alphabet__filter-item('Q')
+      +alphabet__filter-item('R')
+      +alphabet__filter-item('S')
+      +alphabet__filter-item('T')
+      +alphabet__filter-item('U')
+      +alphabet__filter-item('V')
+      +alphabet__filter-item('W')
+    // end alphabet__filter
+
+    // begin alphabet__list
+    .alphabet__list
+      +alphabet__item('A', 'Ulrike Ackermann', 'Claudia Aebersold Szalay', 'Hannah Arendt')
+      +alphabet__item-lg('B', 'Wolfgang Böckenförde', 'Hans-Ulrich Binswanger', 'Hans-Ulrich Bigler', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('C', 'Micheline Calmy-Rey', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item-lg('D', 'Jefferson Davis', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('E', 'Reiner Eichenberger', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item-lg('F', 'Gonzalo Fernández de la Mora', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('G', 'Emmanuel Garessus', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item-lg('H', 'Gerd Habermann', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('J', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('K', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('L', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('M', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item-lg('N', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('O', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('P', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('R', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item-lg('S', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('T', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('U', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('V', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('W', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+      +alphabet__item('Z', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp', 'Hans-Ulrich Daepp')
+// end alphabet

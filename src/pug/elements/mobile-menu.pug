@@ -1,0 +1,51 @@
+// begin mobile-menu
+.mobile-menu#mobile-menu
+  // begin mobile-menu__header
+  .mobile-menu__header
+    .container
+      a(href="/").mobile-menu__logo
+        img(src="assets/img/header-logo-mob.svg", alt="logo")
+      .mobile-menu__close
+        span Close
+        +svg('close')
+  // end mobile-menu__header
+
+  // begin mobile-menu__settings
+  .mobile-menu__settings
+    .container
+      // begin header__lang
+      .header__lang.header__lang--mobile
+        ul.header__lang-select
+          li.header__lang-item
+            .header__lang-icon
+              img(src="assets/img/icons/de.svg", alt="de")
+            .header__lang-text De
+          li.header__lang-item.active
+            .header__lang-icon
+              img(src="assets/img/icons/usa.svg", alt="en")
+            .header__lang-text En
+      // end header__lang
+
+      // begin header__search
+      .header__search.header__search--mobile
+        a(href="/").header__search-link
+          +svg('search')
+      // end header__search
+  // end mobile-menu__settings
+
+  // begin mobile-menu__nav
+  nav.mobile-menu__nav
+    ul.mobile-menu__menu
+      li.mobile-menu__menu-item
+        a.mobile-menu__menu-link.h5(href="/") Über uns
+      li.mobile-menu__menu-item
+        a.mobile-menu__menu-link.h5(href="/") Veranstaltungen
+      li.mobile-menu__menu-item
+        a.mobile-menu__menu-link.h5(href="/") Publikationen
+      li.mobile-menu__menu-item
+        a.mobile-menu__menu-link.h5(href="/") Fundgrube
+      li.mobile-menu__menu-item
+        a.mobile-menu__menu-link.h5(href="/") Gönner werden
+  // end mobile-menu__nav
+
+// end mobile-menu

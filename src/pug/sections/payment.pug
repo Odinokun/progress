@@ -1,0 +1,102 @@
+mixin payment-filter__item-active(plan, price)
+  .payment-filter__item
+    input(type="radio" name='payment-filter' checked)
+    .payment-filter__item-btn
+      .payment-filter__item-btn-icon
+      .payment-filter__item-btn-info
+        span.h6= plan
+        .payment-filter__item-btn-price
+          span.h5= price
+          span.h7 Chf
+
+mixin payment-filter__item(plan, price)
+  .payment-filter__item
+    input(type="radio" name='payment-filter')
+    .payment-filter__item-btn
+      .payment-filter__item-btn-icon
+      .payment-filter__item-btn-info
+        span.h6= plan
+        .payment-filter__item-btn-price
+          span.h5= price
+          span.h7 Chf
+
+mixin input-mix-error(label, placeholder)
+  .input.error
+    .input__placeholder= label
+    input(type="text" placeholder= placeholder)
+
+mixin input-mix(label, placeholder)
+  .input
+    .input__placeholder= label
+    input(type="text" placeholder= placeholder)
+
+mixin textarea-mix(label, placeholder)
+  .textarea
+    .textarea__placeholder= label
+    textarea(placeholder= placeholder)
+
+// begin payment
+.payment
+  .container 
+    h4.h4 I am/We are pleased to support the Progress Foundation in the following capacity
+    // begin payment__header
+    .payment__header
+      // begin payment__header-left
+      .payment__header-left
+        // begin payment-filter
+        .payment-filter
+          +payment-filter__item-active('Individual', '250')
+          +payment-filter__item('Couple', '400')
+          +payment-filter__item('Company', '1000')
+          +payment-filter__item('Supporter', '5000')
+        // end payment-filter
+      // end payment__header-left
+
+      // begin payment__header-right
+      .payment__header-right
+        p This commitment implies no further obligation, in particular no obligation to make future contributions.
+      // end payment__header-right
+    // end payment__header
+
+    // begin payment__body
+    .payment__body
+      // begin payment__body-left
+      .payment__body-left
+        h2.h1 Payment
+        form.payment-form
+          .payment-form__row
+            +input-mix('Title *', 'Title')
+          .payment-form__col-wrap
+            .payment-form__col
+              +input-mix('Last Name *', 'Last Name')
+              +input-mix-error('First Name *', 'First Name')
+              +input-mix('Address *', 'Address')
+              +input-mix('ZIP, City *', 'ZIP, City')
+              +input-mix('Email *', 'Email')
+            .payment-form__col
+              +input-mix('Company', 'Company')
+              +input-mix('Phone', 'Phone')
+              +textarea-mix('Comment', 'Type here')
+          .payment-form__col-wrap
+            .payment-form__col
+              .body-1 * Mandatory fields
+            .payment-form__col
+              button.btn.btn--green(type="submit") 
+                span Submit
+      // end payment__body-left
+
+      // begin payment__body-right
+      .payment__body-right
+        h5.h5.text-green Please pay the amount due to the following account:
+        p Bank Vontobel AG<br>Gotthardstrasse 43<br>8022 Zürich
+        p Account: 41624744.001.005<br>IBAN: CH59 0875 7000 0127 2327 8Clearing: 8757
+        p For international payments add:BIC: VONTCHZZXXX
+        h5.h5.text-green Need Help?
+        p 
+          |Write us a line
+          br
+          a(href="mailto:progress@treuco.ch")  progress@treuco.ch
+      // end payment__body-right
+    // end payment__body
+
+// end payment

@@ -1,5 +1,51 @@
-//begin header
-header.header#header(style="background-color: coral; text-align: center;")
+// begin header
+header.header
   .container
-    h1 Header
-//end header
+    // begin header__logo
+    a(href="/").header__logo
+      img(src="assets/img/header-logo.svg", alt="logo")
+    // end header__logo
+
+    // begin header__nav
+    nav.header__nav
+      // begin header__menu
+      ul.header__menu
+        li.header__menu-item
+          a.header__menu-link(href="/") Über uns
+        li.header__menu-item
+          a.header__menu-link(href="/") Veranstaltungen
+        li.header__menu-item
+          a.header__menu-link(href="/") Publikationen
+        li.header__menu-item
+          a.header__menu-link(href="/") Fundgrube
+        li.header__menu-item
+          a.header__menu-link(href="/") Gönner werden
+      // end header__menu
+
+      // begin header__burger
+      .header__burger
+        .header__burger-text Menu
+        .header__burger-icon
+          +svg('burger')
+      // end header__burger
+
+      // begin header__lang
+      .header__lang.header__lang--desktop
+        ul#header__lang-select.header__lang-select
+          li.header__lang-item
+            .header__lang-icon
+              img(src="assets/img/icons/de.svg", alt="de")
+            .header__lang-text De
+          li.header__lang-item.active
+            .header__lang-icon
+              img(src="assets/img/icons/usa.svg", alt="en")
+            .header__lang-text En
+      // end header__lang
+
+      // begin header__search
+      .header__search.header__search--desktop
+        a(href="/").header__search-link
+          +svg('search')
+      // end header__search
+    // end header__nav
+// end header

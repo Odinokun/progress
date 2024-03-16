@@ -1,0 +1,159 @@
+extends ../_template
+
+block variables
+  - let title       = 'Fundgrube'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'Fundgrube'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      // begin double-sec
+      .double-sec
+        .container
+          .double-sec__item
+            img(src="assets/img/fundgrube.jpg", alt="img")
+          .double-sec__item
+            h5.h5.text-grey In diesem Bereich präsentieren wir Ihnen eine Auswahl an Medienberichten über Anlässe oder Publikationen der Progress Foundation sowie eigene Beiträge unserer Stiftungsratsmitglieder.
+      // end double-sec
+
+      // begin repos
+      .repos
+        .container
+          // begin repos-filter
+          form.repos-filter
+            .repos-filter__item
+              input(type="radio" name='repos-filter' checked)
+              .repos-filter__item-btn
+                span.h6 All
+            .repos-filter__item
+              input(type="radio" name='repos-filter')
+              .repos-filter__item-btn
+                img(src="assets/img/icons/message.svg", alt="icon")
+                span.h6 Speaking of
+            .repos-filter__item
+              input(type="radio" name='repos-filter')
+              .repos-filter__item-btn
+                img(src="assets/img/icons/speaker.svg", alt="icon")
+                span.h6 In the media
+          // end repos-filter
+
+          // begin repos-list
+          .repos-list
+            // begin repos-item
+            .repos-item
+              .repos-item__top
+                .repos-item__top-left
+                  h4.h4 Geschichtsschreibung sollte sich mehr mit Unternehmern befassen und weniger mit Politikern
+                  h6.h6.text-grey Unser Geschichtsbild ist mit Blick auf die Wirtschaft oft verzerrt. Zum einen wird von der industriellen Revolution vielfach nur das soziale Elend wahrgenommen. Zum anderen wird die Bedeutung der Wirtschaft und vor allem der Unternehmer massiv unterschätzt.
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/speaker.svg", alt="icon")
+                    span.h7 In the media
+
+              .repos-item__footer
+                .repos-item__footer-left
+                  span Gerhard Schwarz,
+                  span Nzz.ch, 06.02.2024
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+            
+            // begin repos-item
+            .repos-item
+              .repos-item__top
+                .repos-item__top-left
+                  h4.h4 Der Liberalismus ist nicht woke – Zwang und Freiheit sind ein Widerspruch
+                  h6.h6.text-grey Zu den wichtigsten Anliegen des Liberalismus gehört die Minimierung von Zwang. Neuerdings gehen Zwänge von Minderheiten aus, die unter Begriffen wie «Wokeness» und «politischer Korrektheit» ein Einheitsdenken und -reden durchsetzen möchten.
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/speaker.svg", alt="icon")
+                    span.h7 In the media
+
+              .repos-item__footer
+                .repos-item__footer-left
+                  span Gerhard Schwarz,
+                  span Nzz.ch, 06.02.2024
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+
+            // begin repos-item
+            .repos-item
+              .repos-item__top
+                .repos-item__top-left
+                  h4.h4 Wie die «Bilateralen III» schöngeredet werden
+                  h6.h6.text-grey Unser Geschichtsbild ist mit Blick auf die Wirtschaft oft verzerrt. Zum einen wird von der…
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/message.svg", alt="icon")
+                    span.h7 Speaking of
+
+              .repos-item__footer
+                .repos-item__footer-left
+                  span Gerhard Schwarz,
+                  span Nzz.ch, 06.02.2024
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+
+            // begin repos-item
+            .repos-item
+              .repos-item__top
+                .repos-item__top-left
+                  h4.h4 Zehn Gebote des gesunden Menschenverstands
+                  h6.h6.text-grey Unser Geschichtsbild ist mit Blick auf die Wirtschaft oft verzerrt. Zum einen wird von der…
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/message.svg", alt="icon")
+                    span.h7 Speaking of
+
+              .repos-item__footer
+                .repos-item__footer-left
+                  span Gerhard Schwarz,
+                  span Nzz.ch, 06.02.2024
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+
+            // begin repos-item
+            .repos-item
+              .repos-item__top
+                .repos-item__top-left
+                  h4.h4 Von wegen Neoliberalismus: Wir leben im Neomerkantilismus
+                  h6.h6.text-grey Unser Geschichtsbild ist mit Blick auf die Wirtschaft oft verzerrt. Zum einen wird von der...
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/speaker.svg", alt="icon")
+                    span.h7 In the media
+
+              .repos-item__footer
+                .repos-item__footer-left
+                  span Gerhard Schwarz,
+                  span Nzz.ch, 06.02.2024
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+          // end repos-list
+
+          // begin repos__footer
+          .repos__footer
+            button.btn.btn--green.btn--arr-down
+              span Show all
+              +svg('arr-bottom')
+          // end repos__footer
+      // end repos
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

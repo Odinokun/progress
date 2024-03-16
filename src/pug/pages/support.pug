@@ -1,0 +1,38 @@
+extends ../_template
+
+block variables
+  - let title       = 'BeCOME A SPONSOR'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'BeCOME A SPONSOR'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      // begin double-sec
+      .double-sec
+        .container
+          .double-sec__item
+            img(src="assets/img/support.jpg", alt="img")
+          .double-sec__item
+            h2.h1 Welcome!
+            p For more than forty years, the Progress Foundation has been addressing the fundamental issues of an open society and promoting classical liberal values, namely
+            ul 
+              li competition
+              li private ownership
+              li efficient government and
+              li the personal responsibility of citizens
+            p As a sponsor or supporter, you help us to develop and advance this thinking.The annual contribution for individual sponsors is CHF 250, for couples CHF 400, and for companies CHF 1,000. Supporters contribute a minimum of CHF 5,000 annually.
+            p You will receive a publication of your choice from our book list as a welcome gift. In addition, you will receive one copy of every new publication free of charge. Further, you will be given advance invitations to our Economic Conferences, which guarantee you a seat at the event (couples and companies 2 seats, supporters 4 seats).
+      // end double-sec
+  
+      include ../sections/payment
+      include ../sections/publications
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

@@ -1,15 +1,18 @@
 .btn {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
+  min-width: 220px;
   height: 48px;
   padding: 0 25px 0 32px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 25px !important;
   span {
     font-size: 16px;
     line-height: 1;
+    user-select: none;
     transition: all 0.3s ease;
     white-space: nowrap;
   }
@@ -44,7 +47,43 @@
 .btn--arr-right {
   &:hover {
     svg {
-      transform: translateX(8px);
+      transform: translateX(8px) !important;
+    }
+  }
+}
+
+.btn--green {
+  border: 1px solid $green;
+  background-color: $green;
+  span {
+    color: $white;
+  }
+  svg {
+    fill: $white;
+  }
+  &:hover {
+    svg {
+      transform: translateY(5px);
+    }
+  }
+}
+
+.btn.btn--transparent-white {
+  border: 1px solid $white;
+  background-color: transparent;
+  span {
+    color: $white;
+  }
+  svg {
+    fill: $white;
+  }
+  &:hover {
+    background-color: $white;
+    span {
+      color: $black;
+    }
+    svg {
+      fill: $black;
     }
   }
 }

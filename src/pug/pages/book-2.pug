@@ -1,0 +1,145 @@
+extends ../_template
+
+block variables
+  - let title       = 'Publikationen'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'Publikationen'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      // begin double-sec
+      .double-sec
+        .container
+          // begin item
+          .double-sec__item.double-sec__item--book
+            img(src="assets/img/book.jpg", alt="img")
+          // end item
+
+          // begin item
+          .double-sec__item
+            // begin header
+            .book-header
+              .book-header__label Neuerscheinung
+              .book-header__item
+                img(src="assets/img/icons/calendar.svg", alt="icon")
+                span.h7 20.02.2024
+            // end header
+
+            // begin book-info
+            .book-info
+              h1.h1 Das Ende der Allmende
+              h5.h5.text-grey Nachdenken über Nachhaltigkeit
+              p In diesem Thesenpapier behandeln Konrad Hummler, Dennis Moser und Joel Weibel die Übernutzung natürlicher Ressourcen im Kontext der Klimaproblematik. Sie argumentieren, dass der menschliche Einfluss auf den Kohlenstoffkreislauf und die resultierenden Umweltprobleme als klassisches Beispiel für die "Tragödie der Allmende" gesehen werden können.
+              p Die Autoren diskutieren die Möglichkeit, durch technologische Fortschritte und die Senkung von Informations- und Transaktionskosten, neue Eigentumsrechte und Märkte zu schaffen, die zu einem nachhaltigeren Gleichgewicht führen könnten. Sie plädieren für marktbasierte Lösungen, die externe Kosten internalisieren und so eine Übernutzung der Allmende verhindern.
+
+              // begin book-info__lists
+              .book-info__lists
+                .book-info__list
+                  .book-info__list-item
+                    .body-1.text-grey Herausgeber:
+                    h6.h6 Tito Tettamanti
+                    h6.h6 Oliver Zimmer
+                  .book-info__list-item
+                    .body-1.text-grey Weitere Autoren:
+                    h6.h6 Gerhard Schwarz
+                    h6.h6 René Scheu
+                .book-info__list
+                  .book-info__list-item
+                    .body-1.text-grey Verlag:
+                    h6.h6 Progress Foundation
+                  .book-info__list-item
+                    .body-1.text-grey Erscheinungsjahr:
+                    h6.h6 2023
+                  .book-info__list-item
+                    .body-1.text-grey ISBN:
+                    h6.h6 978-3-907439-01-2
+              // end book-info__lists
+
+              // begin book-info__price
+              .book-info__price
+                .book-info__price-left
+                  .book-info__price-label
+                    span Preis:
+                  .book-info__price-sum
+                    span CHF
+                    span 0.00
+                button.btn.btn--transparent-white
+                  span PDF
+                  +svg('pdf')
+                button.btn.btn--white
+                  span Dieses Buch kaufen
+                  +svg('lock')
+              // end book-info__price
+            // end book-info
+
+            // begin article__content
+            .article__content
+              h5.h5 Berichterstattung in den Medien
+              // begin article__link
+              .article__link
+                .article__link-icon
+                  img(src="assets/img/icons/link-2.svg", alt="icon")
+                .article__link-info
+                  a(href="/").h6 Wider Hasssprache und Sprechverbote
+                  .body-1.text-grey Die Furche, 29.04.2021
+              // end article__link
+
+              // begin article__link
+              .article__link
+                .article__link-icon
+                  img(src="assets/img/icons/link-2.svg", alt="icon")
+                .article__link-info
+                  a(href="/").h6 Weiss wie ein Schwan
+                  .body-1.text-grey NZZ, 10.01.2021
+              // end article__link
+
+              // begin article__link
+              .article__link
+                .article__link-icon
+                  img(src="assets/img/icons/link-1.svg", alt="icon")
+                .article__link-info
+                  a(href="/").h6 Le politiquement correct mine le progrès, selon Gerhard Schwarz
+                  .body-1.text-grey Emmanuel Garessus, Le Temps, 02.12.2020
+              // end article__link
+
+              // begin article__link
+              .article__link
+                .article__link-icon
+                  img(src="assets/img/icons/link-1.svg", alt="icon")
+                .article__link-info
+                  a(href="/").h6 Reden und reden lassen – Buchempfehlung LIONS
+                  .body-1.text-grey Gerhard Schwarz, Stephan Wirz, Lion Magazin, Oktober 2020
+              // end article__link
+
+              // begin article__link
+              .article__link
+                .article__link-icon
+                  img(src="assets/img/icons/link-2.svg", alt="icon")
+                .article__link-info
+                  a(href="/").h6 Für eine Rückkehr zur Debattenkultur
+                  .body-1.text-grey NZZ, Gastkommentar von Gerhard Schwarz und Stephan Wirz, 25.09.2020
+              // end article__link
+
+              // begin article__link
+              .article__link
+                .article__link-icon
+                  img(src="assets/img/icons/link-2.svg", alt="icon")
+                .article__link-info
+                  a(href="/").h6 Gerhard Schwarz, Stephan Wirz (Hrsg.): “Reden und reden lassen. Anstand und Respekt statt politische Korrektheit.”
+                  .body-1.text-grey Finanz und Wirtschaft, 19.09.2020
+              // end article__link
+            // end article__content
+          // end item
+      // end double-sec
+
+      include ../sections/book-content
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

@@ -1,0 +1,145 @@
+.double-sec__item--book {
+  img {
+    width: 70% !important;
+    margin: 0 auto;
+    box-shadow: -25px 17px 36px 1px rgba(0, 0, 0, 0.4);
+  }
+}
+
+// begin header
+.book-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-header__label {
+  font-size: 12px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 8px;
+  color: $white;
+  background-color: $green;
+}
+
+.book-header__item {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  span {
+    white-space: nowrap;
+  }
+}
+// end header
+
+// begin info
+.book-info {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+.book-info__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $grey;
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.book-info__list-item {
+  width: 50%;
+  padding-bottom: 40px;
+
+  @include min(1024) {
+    width: 33.3333%;
+  }
+  .body-1 {
+    margin-bottom: 8px;
+  }
+  .h6 {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.book-info__price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+  padding: 24px;
+  background-color: $green;
+
+  @include min(1200) {
+    flex-wrap: nowrap;
+  }
+  .btn {
+    min-width: 0;
+    margin-top: 16px;
+    margin-right: 16px;
+
+    @include min(1200) {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.book-info__price-left {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  margin-right: auto;
+
+  @include min(1200) {
+    display: block;
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.book-info__price-label {
+  font-size: 16px;
+  padding-right: 8px;
+  color: $white;
+}
+
+.book-info__price-sum {
+  span {
+    font-family: $font-merri;
+    color: $white;
+    &:first-child {
+      font-size: 16px;
+    }
+    &:last-child {
+      font-size: 32px;
+      line-height: 1;
+      padding-left: 4px;
+    }
+  }
+}
+// end info

@@ -1,12 +1,15 @@
 extends ../_template
 
 block variables
-  - let title       = 'Progress foundation'
+  - let title       = 'In den Medien'
   - let description = 'Progress foundation'
+  - let breadcrumbs = 'Geschichtsschreibung sollte sich mehr mit Unternehmern befassen und weniger mit Politikern'
 
 block content
   .main-wrap
     include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
 
     //begin content
     main.main

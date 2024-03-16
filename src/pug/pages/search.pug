@@ -1,0 +1,105 @@
+extends ../_template
+
+block variables
+  - let title       = 'Suchen'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'Suchen'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      .search
+        // begin search__section
+        .search__section
+          .container
+            // begin search__wrap
+            .search__wrap
+              input.search__input.empty(placeholder="Search books, people, events")
+            // end search__wrap
+
+        // begin search__section
+        .search__section
+          .container
+            h5.h5.search__quantity 27 results for "Eigenart"
+            h2 Publikationen
+            // begin result
+            a(href="/").search__result
+              .search__result--info
+                h4 Von der positiven Kraft der Eigenart
+                .body-1.text-grey Anstand und Respekt statt politische Korrektheit
+              .search__result--icon
+                +svg('arr-right')
+            // end result
+            // begin result
+            a(href="/").search__result
+              .search__result--info
+                h4 Von der positiven Kraft der Eigenart
+                .body-1.text-grey Anstand und Respekt statt politische Korrektheit
+              .search__result--icon
+                +svg('arr-right')
+            // end result
+            // begin result
+            a(href="/").search__result
+              .search__result--info
+                h4 Von der positiven Kraft der Eigenart
+                .body-1.text-grey Anstand und Respekt statt politische Korrektheit
+              .search__result--icon
+                +svg('arr-right')
+            // end result
+        // end search__section
+
+        // begin search__section
+        .search__section
+          .container
+            h2 Veranstaltungen
+            // begin result
+            a(href="/").search__result
+              .search__result--info
+                h4 Geschichtsschreibung sollte sich mehr mit Unternehmern befassen und weniger mit Politikern
+                .body-1.text-grey Unser Geschichtsbild ist mit Blick auf die Wirtschaft oft verzerrt. Zum einen wird von der…
+              .search__result--icon
+                +svg('arr-right')
+            // end result
+            // begin result
+            a(href="/").search__result
+              .search__result--info
+                h4 Der Liberalismus ist nicht woke – Zwang und Freiheit sind ein Widerspruch
+                .body-1.text-grey Zu den wichtigsten Anliegen des Liberalismus gehört die Minimierung von Zwang. Neuerdings gehen Zwänge von
+              .search__result--icon
+                +svg('arr-right')
+            // end result
+        // end search__section
+
+        // begin search__section
+        .search__section
+          .container
+            h2 Fundgrube
+            // begin result
+            a(href="/").search__result
+              .search__result--info
+                h4 The Power to Tax and Spend
+                .body-1.text-grey Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duoLorem ipsum sapientem ne ne
+              .search__result--icon
+                +svg('arr-right')
+            // end result
+            // begin result
+            a(href="/").search__result
+              .search__result--info
+                h4 Wege aus der Krise
+                .body-1.text-grey Lorem ipsum sapientem  Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo
+              .search__result--icon
+                +svg('arr-right')
+            // end result
+        // end search__section
+
+      include ../sections/events
+      include ../sections/publications
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

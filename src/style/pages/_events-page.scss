@@ -1,0 +1,27 @@
+.main-event__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+  padding-top: 56px;
+
+  @include min(1024) {
+    flex-direction: row;
+  }
+}
+
+.main-event__header-left {
+  width: 100%;
+  padding-right: 32px;
+
+  @include min(1024) {
+    width: 50%;
+  }
+}
+
+.main-event__header-right {
+  width: 100%;
+
+  @include min(1024) {
+    width: 50%;
+  }
+}
