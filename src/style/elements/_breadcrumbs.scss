@@ -3,33 +3,44 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .breadcrumbs__item {
   position: relative;
-  list-style: none;
-  &::after {
-    font-size: 14px;
-    margin: 0 3px 0 4px;
-    content: '/';
-    color: $text;
+  margin-bottom: 6px;
+  padding-right: 23px;
+  padding-left: 9px;
+  background-image: url('../img/icons/breadcrumbs.svg');
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: 16px 9px;
+  &:first-child {
+    padding-left: 0;
   }
   &:last-child {
+    padding-right: 0;
+    background-image: none;
+
     .breadcrumbs__link {
-      text-decoration: none;
       pointer-events: none;
-    }
-    &::after {
-      display: none;
+      color: $white;
     }
   }
 }
 
 .breadcrumbs__link {
-  font-size: 14px;
+  font-size: 16px;
+  display: block;
+  overflow: hidden;
+  max-width: 200px;
+  transition: color 0.3s ease-in-out;
   white-space: nowrap;
-  color: $text;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  color: #aac4bc;
   &:hover {
     text-decoration: none;
+    color: $white;
   }
 }

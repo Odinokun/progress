@@ -1,0 +1,56 @@
+extends ../_template
+
+block variables
+  - let title       = 'Über uns'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'Über uns'
+
+mixin custom-li(title, text)
+  li
+    .h4=title
+    .body-1=text
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      // begin double-sec
+      .double-sec.double-sec--pb-lg
+        .container
+          .double-sec__item
+            img(src="assets/img/about.jpg", alt="img")
+          .double-sec__item
+            h2.h1 Wofür wir stehen
+            p Fortschritt und Freiheit sind eng miteinander verknüpft. Ohne Freiheit des Forschens und Suchens gibt es keine wirtschaftliche und gesellschaftliche Innovation. Freiheit führt zu Offenheit, Wandel und Fortschritt. In diesem Bewusstsein will die Progress Foundation zur Weiterentwicklung und Verbreitung freiheitlicher Ideen beitragen. Die Pfeiler einer freien Gesellschaft sind für sie der Wettbewerb, das Privateigentum, die Selbstverantwortung und die soziale Verantwortung.
+            ol.custom-ol
+              +custom-li("Wettbewerb", "Wer Marktwirtschaft sagt, meint Wettbewerb. Er erlaubt die freie Wahl nicht nur von Gütern und Dienstleistungen, sondern etwa auch des Berufs und des Arbeitsplatzes. Die daraus resultierende Effizienz bildet die Grundlage des Wohlstands. Vor allem aber ist Wettbewerb gemäss Friedrich August von Hayek ein Entdeckungsverfahren, welches das in einer Gesellschaft verstreute Wissen zusammenführt und neu kombiniert und so für ständige Erneuerung sorgt. Seine segensreichen Wirkungen entfaltet der Wettbewerb dabei nicht nur auf den Gütermärkten; der Wettbewerb von kulturellen oder politischen Einheiten führt zu ähnlich positiven Resultaten. Insofern ist der Wettbewerb nichts anderes als eine liberale Form der Koordination menschlicher Interessen.")
+              +custom-li("Privateigentum", "Während Wettbewerb ein relativ abstraktes Konzept ist, weiss jedermann, was Privateigentum ist. Es bildet die Grundlage haushälterischen Umgangs mit knappen Ressourcen und motiviert Eigentümer, den “Wert” ihres Eigentums zu mehren. Noch wichtiger ist der Autonomiegewinn, der mit der freien Verfügung über Privateigentum verbunden ist. Ohne das Institut des Privateigentums ist eine freie Gesellschaft nicht denkbar. Der freie individuelle Gebrauch des Eigentums wird jedoch zunehmend durch staatliche Regulierungen und eine wachsende Steuerbelastung eingeschränkt. Auch die lockere Geldpolitik beschädigt das Privateigentum, sei es, dass sie zur Inflation führt, sei es, dass sie in finanzieller Repression endet.")
+              +custom-li("Selbstverantwortung", "Freiheit und Selbstverantwortung müssen ein Paar bilden. Das Wahrnehmen von Verantwortung muss in Werten jenseits von Angebot und Nachfrage wurzeln. Weil der Mensch stark auf Anreize reagiert, ist es aber wichtig, Wirtschaft und Gesellschaft so zu organisieren, dass das Verantwortungsbewusstsein geweckt und gestärkt wird. Der Staat hat hier als Garant des Privateigentums und der politischen Bürgerrechte, Verteidiger des Wettbewerbs und Ort kollektiver Anstrengung der menschlichen Gemeinschaft eine entscheidende Funktion. Trotzdem stehen – historisch, sachlogisch und methodologisch – am Anfang die Individuen. Sie bilden den Staat, aber ihre erste Verantwortung besteht darin, für sich und die Ihren zu sorgen. Sie wissen auch am besten, was ihnen wichtig ist und welche Bedürfnisse sie haben. Daher ist gegenüber einem paternalistischen Staat grösste Skepsis am Platz. Der Staat sollte dem Einzelnen nur in absoluten Ausnahmefällen die Verantwortung abnehmen.")
+              +custom-li("Soziale Verantwortung", "Der Mensch ist ein soziales Wesen, das kooperiert und sich um seine Mitmenschen kümmert. Daher ist die Sorge für die nächsten Angehörigen und für andere Menschen, denen sich der Einzelne verbunden fühlt, ein natürliches Charakteristikum freiheitlicher Gesellschaften. Geselligkeit und Solidarität können und dürfen aber nicht von oben dekretiert werden, sondern müssen von unten wachsen. Nur freiwillige Solidarität vermag moralische Qualität zu beanspruchen. Zudem führt staatlich erzwungene „Solidarität“ zu einer Verdrängung der spontanen Solidarität. Staatliche Sozialhilfe sollte daher lediglich eine subsidiäre Funktion wahrnehmen und nur einspringen, wenn die individuelle und freiwillige soziale Hilfe nicht genügt.")
+      // end double-sec
+
+      // begin double-sec
+      .double-sec.double-sec--green
+        .container
+          .double-sec__item
+            img(src="assets/img/wwd.jpg", alt="img")
+          .double-sec__item
+            h2.h1 Wofür wir stehen
+            p Fortschritt und Freiheit sind eng miteinander verknüpft. Ohne Freiheit des Forschens und Suchens gibt es keine wirtschaftliche und gesellschaftliche Innovation. Freiheit führt zu Offenheit, Wandel und Fortschritt. In diesem Bewusstsein will die Progress Foundation zur Weiterentwicklung und Verbreitung freiheitlicher Ideen beitragen. Die Pfeiler einer freien Gesellschaft sind für sie der Wettbewerb, das Privateigentum, die Selbstverantwortung und die soziale Verantwortung.
+            ol.custom-ol
+              +custom-li("Wettbewerb", "Wer Marktwirtschaft sagt, meint Wettbewerb. Er erlaubt die freie Wahl nicht nur von Gütern und Dienstleistungen, sondern etwa auch des Berufs und des Arbeitsplatzes. Die daraus resultierende Effizienz bildet die Grundlage des Wohlstands. Vor allem aber ist Wettbewerb gemäss Friedrich August von Hayek ein Entdeckungsverfahren, welches das in einer Gesellschaft verstreute Wissen zusammenführt und neu kombiniert und so für ständige Erneuerung sorgt. Seine segensreichen Wirkungen entfaltet der Wettbewerb dabei nicht nur auf den Gütermärkten; der Wettbewerb von kulturellen oder politischen Einheiten führt zu ähnlich positiven Resultaten. Insofern ist der Wettbewerb nichts anderes als eine liberale Form der Koordination menschlicher Interessen.")
+              +custom-li("Privateigentum", "Während Wettbewerb ein relativ abstraktes Konzept ist, weiss jedermann, was Privateigentum ist. Es bildet die Grundlage haushälterischen Umgangs mit knappen Ressourcen und motiviert Eigentümer, den “Wert” ihres Eigentums zu mehren. Noch wichtiger ist der Autonomiegewinn, der mit der freien Verfügung über Privateigentum verbunden ist. Ohne das Institut des Privateigentums ist eine freie Gesellschaft nicht denkbar. Der freie individuelle Gebrauch des Eigentums wird jedoch zunehmend durch staatliche Regulierungen und eine wachsende Steuerbelastung eingeschränkt. Auch die lockere Geldpolitik beschädigt das Privateigentum, sei es, dass sie zur Inflation führt, sei es, dass sie in finanzieller Repression endet.")
+              +custom-li("Selbstverantwortung", "Freiheit und Selbstverantwortung müssen ein Paar bilden. Das Wahrnehmen von Verantwortung muss in Werten jenseits von Angebot und Nachfrage wurzeln. Weil der Mensch stark auf Anreize reagiert, ist es aber wichtig, Wirtschaft und Gesellschaft so zu organisieren, dass das Verantwortungsbewusstsein geweckt und gestärkt wird. Der Staat hat hier als Garant des Privateigentums und der politischen Bürgerrechte, Verteidiger des Wettbewerbs und Ort kollektiver Anstrengung der menschlichen Gemeinschaft eine entscheidende Funktion. Trotzdem stehen – historisch, sachlogisch und methodologisch – am Anfang die Individuen. Sie bilden den Staat, aber ihre erste Verantwortung besteht darin, für sich und die Ihren zu sorgen. Sie wissen auch am besten, was ihnen wichtig ist und welche Bedürfnisse sie haben. Daher ist gegenüber einem paternalistischen Staat grösste Skepsis am Platz. Der Staat sollte dem Einzelnen nur in absoluten Ausnahmefällen die Verantwortung abnehmen.")
+              +custom-li("Soziale Verantwortung", "Der Mensch ist ein soziales Wesen, das kooperiert und sich um seine Mitmenschen kümmert. Daher ist die Sorge für die nächsten Angehörigen und für andere Menschen, denen sich der Einzelne verbunden fühlt, ein natürliches Charakteristikum freiheitlicher Gesellschaften. Geselligkeit und Solidarität können und dürfen aber nicht von oben dekretiert werden, sondern müssen von unten wachsen. Nur freiwillige Solidarität vermag moralische Qualität zu beanspruchen. Zudem führt staatlich erzwungene „Solidarität“ zu einer Verdrängung der spontanen Solidarität. Staatliche Sozialhilfe sollte daher lediglich eine subsidiäre Funktion wahrnehmen und nur einspringen, wenn die individuelle und freiwillige soziale Hilfe nicht genügt.")
+      // end double-sec
+  
+      include ../sections/who-we-are
+      include ../sections/history
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

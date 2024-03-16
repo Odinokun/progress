@@ -13,6 +13,19 @@ p {
   color: $grey;
 }
 
+.text-green {
+  color: $green;
+}
+
+.top-title {
+  font-family: $font-merri;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include responsive-font(65, 40);
+}
+
 h1,
 .h1 {
   font-family: $font-merri;
@@ -97,4 +110,15 @@ h6,
   font-family: $font;
   font-size: 14px;
   line-height: 1.5;
+}
+
+p {
+  a {
+    transition: all 0.3s ease;
+    text-decoration-color: $grey;
+    color: $black;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
 }

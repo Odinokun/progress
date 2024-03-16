@@ -1,0 +1,31 @@
+mixin book-prev(img, title, subtitle)
+  a(href="/").book-prev
+    .book-prev__img
+      img(src="assets/img/book-" + img + ".jpg", alt="img")
+    .book-prev__info
+      .book-prev__date
+        img(src="assets/img/icons/calendar.svg", alt="icon")
+        span.body-2 20.02.2024
+      h5.h5= title
+      h6.h6.text-grey= subtitle
+      .body-2.text-grey Herausgeber:
+      .h7 Adrian Holderegger
+      .h7 Gerhard Schwarz
+      .h7 Beat Sitter-Liver
+      .h7 Brigitte Tag
+
+
+// begin books-prev
+.books-prev
+  .container
+    .books-prev__list
+      +book-prev('01', 'Links, zeitgeistig und machtverliebt', 'Liberale Gedanken zu den Intellektuellen')
+      +book-prev('02', 'Total Data – Total Control', 'Null-Toleranz in allen Lebensbereichen')
+      +book-prev('03', 'Reden und reden lassen', 'Anstand und Respekt statt politische Korrektheit')
+      +book-prev('04', 'Vom Kredit zur Schuld', 'Wenn Verschuldung die Freiheit bedroht')
+
+    .books-prev__footer
+      a(href="/").btn.btn--green
+        span Alle anzeigen
+        +svg('arr-bottom')
+// end books-prev

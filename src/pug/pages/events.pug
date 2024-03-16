@@ -1,0 +1,247 @@
+extends ../_template
+
+block variables
+  - let title       = 'Veranstaltungen'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'Energie und Klima – vom Wunschdenken zum realistischen Handeln'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      // begin main-event
+      .main-event
+        .container
+          // begin header
+          .main-event__header
+            .main-event__header-left
+              h1 Economic Conferences
+            .main-event__header-right
+              h5.text-grey Bei unseren Economic Conferences präsentieren international anerkannte Experten neueste Erkenntnisse zu politökonomischen Themen, gefolgt von einer Diskussionsrunde mit dem Publikum.
+          // end header
+
+          // begin event-lg
+          .event-lg
+            // begin img
+            a(href="/").event-lg__img
+              img(src="assets/img/event-4.jpg" alt="event")
+              .event__time
+                +svg('play')
+                span.body-2 02h 10min
+            // end img
+            // begin event-lg__information
+            .event-lg__information
+              h5.h5.text-green 52 Economic Conference
+              h4.h4 How to feed 10 billion people by 2050
+              .event__descr
+                span Kaspar Villiger: 
+                span «Demokratie und Rechtsstaat im Lichte einer neuen Weltordnung»
+              .event__descr
+                span Peter Brabeck-Letmathe: 
+                span Ernährung für ein besseres Leben 
+              .event__footer
+                .event__footer-item
+                  .event__footer-icon
+                    +svg('calendar')
+                  span 20.04.2023
+                .event__footer-item
+                  .event__footer-icon
+                    +svg('geo')
+                  span Zürich
+              a(href="/").event__more
+                span Mehr erfahren
+                +svg('arr-right')
+            // end event-lg__information
+          // end event-lg
+      // end main-event
+
+      include ../sections/events-sm
+
+      // begin repos
+      .repos.repos--events
+        .container
+          .repos__header
+            .repos__header-left
+              h2.h1 Workshops
+            .repos__header-right
+              h5.h5.text-grey Die Workshops der Progress Foundation sind Arbeitstagungen im kleinen Kreis zu spezifischen Themen und Texten. Die Teilnehmenden werden jeweils vom Stiftungsrat persönlich eingeladen.
+          // begin repos-filter
+          form.repos-filter
+            .repos-filter__item
+              input(type="radio" name='repos-filter' checked)
+              .repos-filter__item-btn
+                span.h6 All
+            .repos-filter__item
+              input(type="radio" name='repos-filter')
+              .repos-filter__item-btn
+                img(src="assets/img/icons/book.svg", alt="icon")
+                span.h6 Book
+            .repos-filter__item
+              input(type="radio" name='repos-filter')
+              .repos-filter__item-btn
+                img(src="assets/img/icons/protocol.svg", alt="icon")
+                span.h6 Protocol
+            .repos-filter__item
+              input(type="radio" name='repos-filter')
+              .repos-filter__item-btn
+                img(src="assets/img/icons/speaker.svg", alt="icon")
+                span.h6 In the media
+          // end repos-filter
+
+          // begin repos-list
+          .repos-list
+            // begin repos-item
+            .repos-item.repos-item--event
+              .repos-item__top
+                .repos-item__top-date
+                  .body-1 Workshop
+                  .h1 26
+                .repos-item__top-left
+                  h4.h4 The Power to Tax and Spend
+                  h6.h6.text-grey Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duoLorem ipsum sapientem ne ne
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/book.svg", alt="icon")
+                    span.h7 Book
+
+              .repos-item__footer
+                .repos-item__footer-left
+                  .repos-item__footer-left-item
+                    +svg('calendar')
+                    .body-2 12.05.2022 – 14.05.2022
+                  .repos-item__footer-left-item
+                    +svg('geo')
+                    .body-2 Speicher
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+            
+            // begin repos-item
+            .repos-item.repos-item--event
+              .repos-item__top
+                .repos-item__top-date
+                  .body-1 Workshop
+                  .h1 25
+                .repos-item__top-left
+                  h4.h4 Wege aus der Krise
+                  h6.h6.text-grey Lorem ipsum sapientem  Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/book.svg", alt="icon")
+                    span.h7 Book
+                  .repos-item__type
+                    img(src="assets/img/icons/speaker.svg", alt="icon")
+                    span.h7 Media
+
+              .repos-item__footer
+                .repos-item__footer-left
+                  .repos-item__footer-left-item
+                    +svg('calendar')
+                    .body-2 12.05.2022 – 14.05.2022
+                  .repos-item__footer-left-item
+                    +svg('geo')
+                    .body-2 Speicher
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+
+            // begin repos-item
+            .repos-item.repos-item--event
+              .repos-item__top
+                .repos-item__top-date
+                  .body-1 Workshop
+                  .h1 24
+                .repos-item__top-left
+                  h4.h4 Zerrüttete Diskussionskultur – In den Fängen politischer Korrektheit
+                  h6.h6.text-grey Lorem ipsum sapientem  Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/protocol.svg", alt="icon")
+                    span.h7 Protocol
+              .repos-item__footer
+                .repos-item__footer-left
+                  .repos-item__footer-left-item
+                    +svg('calendar')
+                    .body-2 12.05.2022 – 14.05.2022
+                  .repos-item__footer-left-item
+                    +svg('geo')
+                    .body-2 Speicher
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+
+            // begin repos-item
+            .repos-item.repos-item--event
+              .repos-item__top
+                .repos-item__top-date
+                  .body-1 Workshop
+                  .h1 23
+                .repos-item__top-left
+                  h4.h4 Debt and Freedom
+                  h6.h6.text-grey Lorem ipsum sapientem  Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/protocol.svg", alt="icon")
+                    span.h7 Protocol
+              .repos-item__footer
+                .repos-item__footer-left
+                  .repos-item__footer-left-item
+                    +svg('calendar')
+                    .body-2 12.05.2022 – 14.05.2022
+                  .repos-item__footer-left-item
+                    +svg('geo')
+                    .body-2 Speicher
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+
+            // begin repos-item
+            .repos-item.repos-item--event
+              .repos-item__top
+                .repos-item__top-date
+                  .body-1 Workshop
+                  .h1 22
+                .repos-item__top-left
+                  h4.h4 Libertärer Paternalismus
+                  h6.h6.text-grey Lorem ipsum sapientem  Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo Lorem ipsum sapientem ne neque dolor erat,erossolet invidunt duo
+                .repos-item__top-right
+                  .repos-item__type
+                    img(src="assets/img/icons/protocol.svg", alt="icon")
+                    span.h7 Protocol
+              .repos-item__footer
+                .repos-item__footer-left
+                  .repos-item__footer-left-item
+                    +svg('calendar')
+                    .body-2 12.05.2022 – 14.05.2022
+                  .repos-item__footer-left-item
+                    +svg('geo')
+                    .body-2 Speicher
+                .repos-item__footer-right
+                  a(href="/").repos-item__footer-link
+                    +svg('arr-right')
+            // end repos-item
+
+          // end repos-list
+
+          // begin repos__footer
+          .repos__footer
+            button.btn.btn--green.btn--arr-down
+              span Show all
+              +svg('arr-bottom')
+          // end repos__footer
+      // end repos
+
+
+      include ../sections/alphabet
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

@@ -1,0 +1,120 @@
+extends ../_template
+
+block variables
+  - let title       = 'Veranstaltungen'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'Energie und Klima – vom Wunschdenken zum realistischen Handeln'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      // begin article
+      article.article
+        .container
+          // begin article__header
+          header.article__header.article-header
+            .article-header__item
+              .article-header__item-icon
+                img(src="assets/img/icons/calendar.svg", alt="icon")
+              span.article-header__item-text 18.09.2023
+            a(href="/" target="_blank" rel="noopener noreferrer").article-header__item
+              .article-header__item-icon
+                img(src="assets/img/icons/geo.svg", alt="icon")
+              span.article-header__item-text Zunfthaus zur Meisen
+          // end article__header
+
+          // begin article__content
+          .article__content
+            h4.h4.text-green 56 Economic Conference
+            h1.h2 Energie und Klima – vom Wunschdenken zum realistischen Handeln
+            h3.h5.text-grey Lorem ipsum dolor sit amet consectetur. Bibendum proin pellentesque at condimentum arcu elit adipiscing massa lacinia. Platea tortor dolor tincidunt condimentum dignissim egestas. Facilisis sit pulvinar praesent posuere. Tincidunt elementum est ante proin erat ornare consectetur dolor.
+          // end article__content
+
+          // begin article__content
+          .article__content
+            p Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua. Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua. Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua.
+          // end article__content
+
+          // begin article__content
+          .article__content
+            h4.h4 «Wise approaches to energy transition uncertainties»
+            h6.h6 Jeremy Bentham
+            p.body-1.text-grey Co-chair (scenarios) at World Energy Council and retired Head of Shell Scenarios
+            p Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua. Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua. Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua.
+          // end article__content
+
+          // begin article__content
+          .article__content
+            .article__iframe
+              iframe(src="https://www.youtube.com/embed/KLuTLF3x9sA?si=f2mPIIHHEFFuANOp&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+          // end article__content
+
+          // begin article__content
+          .article__content
+            p Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua. Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua. Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad, ipsum alii vidisse justo id. Option porttitor diam voluptua.
+          // end article__content
+
+          // begin article__content
+          .article__content
+            h5.h5 In den Medien
+            // begin article__link
+            .article__link
+              .article__link-icon
+                img(src="assets/img/icons/link-1.svg", alt="icon")
+              .article__link-info
+                a(href="/").h6 Manipulation ist heikler als Zwang
+                .body-1.text-grey Markus Saurer, Finanz und Wirtschaft, 27.07.2016 
+            // end article__link
+
+            // begin article__link
+            .article__link
+              .article__link-icon
+                img(src="assets/img/icons/link-1.svg", alt="icon")
+              .article__link-info
+                a(href="/").h6 Wider das Laster
+                .body-1.text-grey Markus Schär, Weltwoche, 01.06.2016
+            // end article__link
+
+            // begin article__link
+            .article__link
+              .article__link-icon
+                img(src="assets/img/icons/link-2.svg", alt="icon")
+              .article__link-info
+                a(href="/").h6 Gastkommentar: Gelebte Unabhängigkeit der Schweizer Nationalbank
+                .body-1.text-grey Gerhard Schwarz, AZ Medien, 22.01.2015
+            // end article__link
+
+            // begin article__link
+            .article__link
+              .article__link-icon
+                img(src="assets/img/icons/link-2.svg", alt="icon")
+              .article__link-info
+                a(href="/").h6 Les banques centrales ont beaucoup trop de pouvoir
+                .body-1.text-grey Emmanuel Garessus, Le Temps, 11.06.2014
+            // end article__link
+          // end article__content
+
+          // begin article__content
+          .article__content
+            h5.h5 Bücher
+            // begin article__link
+            .article__link
+              .article__link-icon
+                img(src="assets/img/icons/link-3.svg", alt="icon")
+              .article__link-info
+                a(href="/").h6 Total Data – Total Control
+                .body-1.text-grey 20.02.2024
+            // end article__link
+          // end article__content
+      // end article
+
+      include ../sections/publications
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

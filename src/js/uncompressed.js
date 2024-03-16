@@ -2,7 +2,21 @@
 // should be commented before production
 
 $(document).ready(function ($) {
-  pageWidget(['index', 'article']);
+  pageWidget([
+    'index',
+    'article',
+    'workshop',
+    'conference',
+    'search',
+    'speaker',
+    'repos',
+    'books',
+    'book',
+    'book-2',
+    'events',
+    'support',
+    'about',
+  ]);
 });
 
 function pageWidget(pages) {

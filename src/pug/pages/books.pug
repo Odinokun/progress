@@ -1,0 +1,62 @@
+extends ../_template
+
+block variables
+  - let title       = 'Publikationen'
+  - let description = 'Progress foundation'
+  - let breadcrumbs = 'Publikationen'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section
+
+    //begin content
+    main.main
+      // begin double-sec
+      .double-sec
+        .container
+          // begin item
+          .double-sec__item.double-sec__item--book
+            img(src="assets/img/book.jpg", alt="img")
+          // end item
+
+          // begin item
+          .double-sec__item
+            // begin header
+            .book-header
+              .book-header__label Neuerscheinung
+              .book-header__item
+                img(src="assets/img/icons/calendar.svg", alt="icon")
+                span.h7 20.02.2024
+            // end header
+
+            // begin book-info
+            .book-info
+              h1.h1 Das Ende der Allmende
+              h5.h5.text-grey Nachdenken über Nachhaltigkeit
+              p In diesem Thesenpapier behandeln Konrad Hummler, Dennis Moser und Joel Weibel die Übernutzung natürlicher Ressourcen im Kontext der Klimaproblematik. Sie argumentieren, dass der menschliche Einfluss auf den Kohlenstoffkreislauf und die resultierenden Umweltprobleme als klassisches Beispiel für die "Tragödie der Allmende" gesehen werden können.
+              p Die Autoren diskutieren die Möglichkeit, durch technologische Fortschritte und die Senkung von Informations- und Transaktionskosten, neue Eigentumsrechte und Märkte zu schaffen, die zu einem nachhaltigeren Gleichgewicht führen könnten. Sie plädieren für marktbasierte Lösungen, die externe Kosten internalisieren und so eine Übernutzung der Allmende verhindern.
+
+              // begin book-info__lists
+              .book-info__lists
+                .book-info__list
+                  .book-info__list-item
+                    .body-1.text-grey Herausgeber:
+                    h6.h6 Tito Tettamanti
+                    h6.h6 Oliver Zimmer
+              // end book-info__lists
+
+              a(href="/").btn.btn--green.btn--arr-right
+                span Mehr erfahren
+                +svg('arr-right') 
+            // end book-info
+          // end item
+      // end double-sec
+
+      include ../sections/books-prev
+      include ../sections/alphabet
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

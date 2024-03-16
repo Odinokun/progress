@@ -1,0 +1,29 @@
+mixin who-we-are__item(img, title, position, description)
+  .who-we-are__item
+    .who-we-are__item-img
+      img(src=("assets/img/man-" + img + ".jpg"), alt="icon")
+    .who-we-are__item-info
+      h4.h4= title
+      h5.h5.text-green= position
+      p= description
+
+mixin who-we-are__item-without-img(title, position, description)
+  .who-we-are__item
+    .who-we-are__item-img
+    .who-we-are__item-info
+      h4.h4= title
+      h5.h5.text-green= position
+      p= description
+
+// begin who-we-are
+.who-we-are
+  .container
+    h2.who-we-are__title.h1 Who We Are
+    .who-we-are__list
+      +who-we-are__item("01","Gerhard Schwarz","President","1951, studies in economics in St. Gallen, Great Barrington (Massachusetts) and Cambridge (Massachusetts). From 1981, member of the editorial board of Neue Zürcher Zeitung; editor-in-chief from 1994 to 2010. 2010 – 2016 director of the classical liberal think tank Avenir Suisse, Zurich. 1989 – 2014 lecturer at the University of Zurich. Since 2016, publicist and consultant with his firm Schwarz auf Weiss.")
+      +who-we-are__item("02","Konrad Hummler","Vice President","1953, studies in law in Zurich and economics in Rochester (New York). 1991 – 2012 partner at Wegelin & Co., Private Bankers. Member of numerous governing boards and foundation councils. Since 2013, partner at M1 AG, a private think tank for contemporary strategic issues.")
+      +who-we-are__item("03","Ivan Adamovich","Partner","1971, studies in economics in Fribourg, Barcelona, Jena and Berkeley (California). Active in wealth management since 2004; from 2009, member of the executive management of several banks. Since 2017, with Private Client Bank in Zurich; CEO as of 2018. Lecturer in applied economics at the University of Lucerne.")
+      +who-we-are__item-without-img("John Aldock","Partner","1942, studies at Northwestern University (B.S.) and the University of Pennsylvania (J.D.). After acquiring practical legal experience, joins the Shea & Gardner law firm. Chairman of its Washington office. After the merger (2004) with Goodwin Procter, chairman of its Washington office and general counsel of Goodwin Procter LLP. Selected by Chambers USA and Best Lawyers in America as one of the country’s leading business litigation lawyers. Since April 2017, retired partner of Procter Goodwin LLP.")
+      +who-we-are__item-without-img("Georg Vanberg","Partner","1971, studies in economics and political science at William and Mary and the University of Rochester. 1999 – 2011 assistant and associate professor at various universities in the USA, then Professor of Political Science at the University of North Carolina. Since 2013, Professor of Political Science and Law at Duke University, where he has served as department chair since 2016. President of the Public Choice Society, 2016-2018.")
+
+// end who-we-are
