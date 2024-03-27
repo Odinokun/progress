@@ -1,15 +1,19 @@
 extends ../_template
 
 block variables
-  - let title       = 'Progress foundation'
+  - let title       = 'Progress foundation:'
   - let description = 'Progress foundation'
+  - let breadcrumbs = 'Über uns'
 
 block content
   .main-wrap
     include ../sections/header
+    include ../elements/mobile-menu
+    include ../sections/top-section-index
 
     //begin content
     main.main
+      include ../sections/top-index
       include ../sections/events
       include ../sections/publications
 

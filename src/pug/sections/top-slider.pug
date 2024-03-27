@@ -1,0 +1,29 @@
+mixin top-slide(img, text, title)
+  .top-slide.swiper-slide
+    .top-slide__content
+      .top-slide__content-top
+        h6.top-slide__text.h6= text
+        h5.top-slide__title.h5= title
+        .event__footer
+          .event__footer-item
+            .event__footer-icon
+              +svg('calendar')
+            span 20.04.2023
+          .event__footer-item
+            .event__footer-icon
+              +svg('geo')
+            span Zürich
+      a(href="/").event__more
+        span Mehr erfahren
+        +svg('arr-right')
+    .top-slide__img
+      img(src="assets/img/" + img + ".jpg", alt= title)
+
+// begin top-slider
+.top-slider#top-slider.swiper
+  .swiper-wrapper
+    +top-slide('writer', '55 Economic Conference', 'Are Central Banks Causing Inflation?')
+    +top-slide('slider-book', 'Lorem, ipsum dolor.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolore.')
+    +top-slide('writer', '55 Economic Conference', 'Are Central Banks Causing Inflation?')
+    +top-slide('slider-book', 'Lorem, ipsum dolor.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolore.')
+// end top-slider

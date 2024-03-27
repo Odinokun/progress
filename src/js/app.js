@@ -5,8 +5,4 @@ $(function () {
   require('./modules/mobile-menu')();
   require('./modules/search')();
   require('./modules/scroll2anchor')();
-
-  // require('./modules/scrollUp')();
-  // require('./modules/maskedinput')();
-  // require('./modules/popup')();
 });

@@ -1,0 +1,58 @@
+.top-index {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @include min(1024) {
+      flex-direction: row;
+    }
+  }
+}
+
+.top-index__left {
+  width: 100%;
+
+  @include min(1024) {
+    width: 50%;
+  }
+  @include min(1200) {
+    width: 45%;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+.top-index__right {
+  width: 100%;
+
+  @include min(1024) {
+    width: calc(50% + 100px);
+    margin-left: -100px;
+  }
+  @include min(1200) {
+    width: calc(55% + 150px);
+    margin-left: -150px;
+  }
+}
+
+.top-index__left-title {
+  margin-bottom: 24px;
+  padding-top: 8px;
+
+  @include min(768) {
+    margin-bottom: 40px;
+  }
+}
+
+.top-index__left-descr {
+  margin-bottom: 24px;
+
+  @include min(640) {
+    width: calc(100% - 150px);
+    margin-bottom: 40px;
+  }
+  @include min(1200) {
+    width: calc(100% - 200px);
+  }
+}
