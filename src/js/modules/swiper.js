@@ -1,5 +1,4 @@
 module.exports = function () {
-
   // const clinicThumb = new Swiper("#clinic-slider-sm", {
   //   slidesPerView: 1,
   //   spaceBetween: 20,
@@ -79,30 +78,17 @@ module.exports = function () {
   //   }
   // });
   //
-  // const teamSlider = new Swiper('#team-slider', {
-  //   loop: true,
-  //   spaceBetween: 20,
-  //   grabCursor: true,
-  //   slidesPerView: 1.1,
-  //   autoplay: {
-  //     delay: 3000,
-  //     pauseOnMouseEnter: true,
-  //     disableOnInteraction: false,
-  //   },
-  //   breakpoints: {
-  //     576: {
-  //       slidesPerView: 2,
-  //     },
-  //     768: {
-  //       slidesPerView: 3,
-  //     },
-  //     1200: {
-  //       slidesPerView: 4,
-  //     }
-  //   }
-  // });
-  //
-  //
+  const topSlider = new Swiper('#top-slider', {
+    loop: true,
+    grabCursor: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
+  });
+
   // const thankSlider1 = new Swiper('#thank-slider-01', {
   //   spaceBetween: 10,
   //   grabCursor: false,
@@ -154,5 +140,4 @@ module.exports = function () {
   //   spaceBetween: 20,
   //   slidesPerView: 1,
   // });
-
 };

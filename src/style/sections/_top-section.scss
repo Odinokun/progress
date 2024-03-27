@@ -12,11 +12,22 @@
   }
 }
 
+.top-section--index {
+  .top-section__title {
+    margin-left: 0;
+    text-align: left;
+    text-transform: none;
+  }
+}
+
 .top-section__title {
-  // width: 60%;
   margin-top: auto;
   margin-bottom: -8px;
-  // margin-left: auto;
+  margin-left: auto;
   text-align: right;
   color: $white;
+
+  @include min(1024) {
+    max-width: 70%;
+  }
 }
